@@ -29,9 +29,9 @@ namespace Mini_Market_Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button_selling = new System.Windows.Forms.Button();
             this.button_product = new System.Windows.Forms.Button();
             this.button_seller = new System.Windows.Forms.Button();
@@ -55,6 +55,7 @@ namespace Mini_Market_Management_System
             // 
             // button_selling
             // 
+            this.button_selling.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_selling.FlatAppearance.BorderSize = 0;
             this.button_selling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_selling.Font = new System.Drawing.Font("Sitka Display", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -69,6 +70,7 @@ namespace Mini_Market_Management_System
             // 
             // button_product
             // 
+            this.button_product.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_product.FlatAppearance.BorderSize = 0;
             this.button_product.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_product.Font = new System.Drawing.Font("Sitka Display", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,6 +85,7 @@ namespace Mini_Market_Management_System
             // 
             // button_seller
             // 
+            this.button_seller.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_seller.FlatAppearance.BorderSize = 0;
             this.button_seller.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_seller.Font = new System.Drawing.Font("Sitka Display", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -108,6 +111,7 @@ namespace Mini_Market_Management_System
             // 
             // button_delete
             // 
+            this.button_delete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_delete.FlatAppearance.BorderSize = 0;
             this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_delete.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -122,6 +126,7 @@ namespace Mini_Market_Management_System
             // 
             // button_update
             // 
+            this.button_update.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_update.FlatAppearance.BorderSize = 0;
             this.button_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_update.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,6 +141,7 @@ namespace Mini_Market_Management_System
             // 
             // button_add
             // 
+            this.button_add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_add.FlatAppearance.BorderSize = 0;
             this.button_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_add.Font = new System.Drawing.Font("Sitka Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,11 +157,12 @@ namespace Mini_Market_Management_System
             // label_exit
             // 
             this.label_exit.AutoSize = true;
+            this.label_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label_exit.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_exit.ForeColor = System.Drawing.Color.Goldenrod;
             this.label_exit.Location = new System.Drawing.Point(1063, -3);
             this.label_exit.Name = "label_exit";
-            this.label_exit.Size = new System.Drawing.Size(31, 32);
+            this.label_exit.Size = new System.Drawing.Size(30, 32);
             this.label_exit.TabIndex = 15;
             this.label_exit.Text = "X";
             this.label_exit.Click += new System.EventHandler(this.label_exit_Click);
@@ -291,30 +298,30 @@ namespace Mini_Market_Management_System
             // 
             // DataGridView_category
             // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            this.DataGridView_category.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DataGridView_category.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridView_category.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridView_category.BackgroundColor = System.Drawing.Color.White;
             this.DataGridView_category.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridView_category.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridView_category.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView_category.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView_category.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridView_category.ColumnHeadersHeight = 24;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView_category.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView_category.DefaultCellStyle = dataGridViewCellStyle6;
             this.DataGridView_category.EnableHeadersVisualStyles = false;
             this.DataGridView_category.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_category.Location = new System.Drawing.Point(337, 102);
@@ -354,7 +361,7 @@ namespace Mini_Market_Management_System
             this.label_logout.ForeColor = System.Drawing.Color.Goldenrod;
             this.label_logout.Location = new System.Drawing.Point(32, 603);
             this.label_logout.Name = "label_logout";
-            this.label_logout.Size = new System.Drawing.Size(96, 32);
+            this.label_logout.Size = new System.Drawing.Size(95, 32);
             this.label_logout.TabIndex = 19;
             this.label_logout.Text = "Logout";
             this.label_logout.Click += new System.EventHandler(this.label_logout_Click);

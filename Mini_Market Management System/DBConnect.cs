@@ -9,7 +9,7 @@ namespace Mini_Market_Management_System
 {
     class DBConnect
     {
-        private SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\acer\Documents\minimarketdb.mdf;Integrated Security=True;Connect Timeout=30");
+        private SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Desy Scott\Documents\minimarketdb.mdf;Integrated Security=True;Connect Timeout=30");
 
         public SqlConnection GetCon()
         {
