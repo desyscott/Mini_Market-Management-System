@@ -13,6 +13,7 @@ namespace Mini_Market_Management_System
 {
     public partial class ProductForm : Form
     {
+        //Creating a collection for product
         DBConnect dBCon = new DBConnect();
         public ProductForm()
         {
@@ -30,10 +31,9 @@ namespace Mini_Market_Management_System
         {
             getCategory();
             getTable();
-
-
         }
 
+        //getting the category from the category table
         private void getCategory()
         {
             string selectQuerry = "SELECT * FROM Category";
