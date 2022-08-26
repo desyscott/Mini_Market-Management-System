@@ -20,6 +20,8 @@ namespace Mini_Market_Management_System
             InitializeComponent();
         }
 
+
+        //navigating to the category screen
         private void button_category_Click(object sender, EventArgs e)
         {
             CategoryForm category = new CategoryForm();
@@ -57,6 +59,7 @@ namespace Mini_Market_Management_System
             dataGridView_product.DataSource = table;
         }
 
+        //resetting the input filed
         private void clear()
         {
             TextBox_id.Clear();
@@ -66,6 +69,8 @@ namespace Mini_Market_Management_System
             comboBox_category.SelectedIndex = 0;
         }
 
+
+        //adding the values in the table database after adding category
         private void button_add_Click(object sender, EventArgs e)
         {
             try
@@ -85,6 +90,7 @@ namespace Mini_Market_Management_System
             }
         }
 
+        //updating the values in the table database after updating category
         private void button_update_Click(object sender, EventArgs e)
         {
             try
@@ -112,8 +118,9 @@ namespace Mini_Market_Management_System
             }
         }
 
-     
 
+
+        //inserting the data into the input filled when a row in the table it is been click on
         private void dataGridView_product_Click_1(object sender, EventArgs e)
         {
             TextBox_id.Text = dataGridView_product.SelectedRows[0].Cells[0].Value.ToString();
@@ -123,6 +130,7 @@ namespace Mini_Market_Management_System
             comboBox_category.SelectedValue = dataGridView_product.SelectedRows[0].Cells[4].Value.ToString();
         }
 
+        //deleting the values
         private void button_delete_Click(object sender, EventArgs e)
         {
             try
@@ -149,11 +157,14 @@ namespace Mini_Market_Management_System
             }
         }
 
+        //fetching all the product table collection
         private void button_Refresh_Click(object sender, EventArgs e)
         {
             getTable();
         }
 
+
+        //filtering the product colllection
         private void comboBox_search_SelectionChangeCommitted(object sender, EventArgs e)
         {
             string selectQuerry = "SELECT * FROM Product WHERE ProdCat='"+comboBox_search.SelectedValue.ToString()+"'";
@@ -164,6 +175,7 @@ namespace Mini_Market_Management_System
             dataGridView_product.DataSource = table;
         }
 
+   
         private void label_exit_MouseEnter(object sender, EventArgs e)
         {
             label_exit.ForeColor = Color.Red;
@@ -174,6 +186,8 @@ namespace Mini_Market_Management_System
             label_exit.ForeColor = Color.Goldenrod;
         }
 
+
+        //logging out
         private void label_logout_MouseEnter(object sender, EventArgs e)
         {
             label_logout.ForeColor = Color.Red;
@@ -191,11 +205,14 @@ namespace Mini_Market_Management_System
             this.Hide();
         }
 
+        //exitting the product screen
         private void label_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+
+        //navigating to the seller screen
         private void button_seller_Click(object sender, EventArgs e)
         {
             SellerForm seller = new SellerForm();
@@ -203,6 +220,8 @@ namespace Mini_Market_Management_System
             this.Hide();
         }
 
+
+        //navigating to the selling screen
         private void button_selling_Click(object sender, EventArgs e)
         {
             SellingForm selling = new SellingForm();

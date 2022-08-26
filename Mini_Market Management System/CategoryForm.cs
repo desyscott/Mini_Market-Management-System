@@ -32,7 +32,7 @@ namespace Mini_Market_Management_System
             DataGridView_category.DataSource = table;
         }
 
-        //inserting the values into the table after adding category
+        //adding the values into the table after adding category
         private void button_add_Click(object sender, EventArgs e)
         {
             try
