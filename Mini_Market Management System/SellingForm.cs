@@ -92,7 +92,7 @@ namespace Mini_Market_Management_System
         private void button_print_Click(object sender, EventArgs e)
         {
             //We need DGVPrinter helper For PDF file
-            printer.Title = "Mdemy MiniMarket Sell Lists";
+            printer.Title = "Scottex Sell Lists";
             printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date);
             printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
             printer.PageNumbers = true;

@@ -135,7 +135,7 @@ namespace Mini_Market_Management_System
 
         private void label_logout_MouseLeave(object sender, EventArgs e)
         {
-            label_logout.ForeColor = Color.Goldenrod;
+            label_logout.ForeColor = Color.SlateGray;
         }
 
         private void label_exit_MouseEnter(object sender, EventArgs e)
@@ -145,7 +145,7 @@ namespace Mini_Market_Management_System
 
         private void label_exit_MouseLeave(object sender, EventArgs e)
         {
-            label_exit.ForeColor = Color.Goldenrod;
+            label_exit.ForeColor = Color.SlateGray;
         }
 
         private void label_exit_Click(object sender, EventArgs e)

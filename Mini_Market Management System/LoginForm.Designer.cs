@@ -50,7 +50,7 @@ namespace Mini_Market_Management_System
             // 
             this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.MediumSeaGreen;
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.SlateGray;
             this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
@@ -67,7 +67,7 @@ namespace Mini_Market_Management_System
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Goldenrod;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(308, 142);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 25);
@@ -78,7 +78,7 @@ namespace Mini_Market_Management_System
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Goldenrod;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(308, 183);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 25);
@@ -89,8 +89,8 @@ namespace Mini_Market_Management_System
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label3.Location = new System.Drawing.Point(483, 41);
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.Location = new System.Drawing.Point(376, 31);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 37);
             this.label3.TabIndex = 1;
@@ -108,7 +108,7 @@ namespace Mini_Market_Management_System
             this.TextBox_username.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TextBox_username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_username.FocusedState.Parent = this.TextBox_username;
-            this.TextBox_username.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBox_username.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_username.HoverState.Parent = this.TextBox_username;
             this.TextBox_username.Location = new System.Drawing.Point(438, 136);
@@ -132,7 +132,7 @@ namespace Mini_Market_Management_System
             this.TextBox_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TextBox_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_password.FocusedState.Parent = this.TextBox_password;
-            this.TextBox_password.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBox_password.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_password.HoverState.Parent = this.TextBox_password;
             this.TextBox_password.Location = new System.Drawing.Point(438, 177);
@@ -152,7 +152,7 @@ namespace Mini_Market_Management_System
             this.Button_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_login.CustomImages.Parent = this.Button_login;
             this.Button_login.FillColor = System.Drawing.Color.Goldenrod;
-            this.Button_login.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_login.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_login.ForeColor = System.Drawing.Color.Black;
             this.Button_login.HoverState.Parent = this.Button_login;
             this.Button_login.Location = new System.Drawing.Point(395, 245);
@@ -183,7 +183,7 @@ namespace Mini_Market_Management_System
             this.label_exit.AutoSize = true;
             this.label_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label_exit.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_exit.ForeColor = System.Drawing.Color.Goldenrod;
+            this.label_exit.ForeColor = System.Drawing.Color.Gray;
             this.label_exit.Location = new System.Drawing.Point(619, 0);
             this.label_exit.Name = "label_exit";
             this.label_exit.Size = new System.Drawing.Size(30, 32);
@@ -233,7 +233,7 @@ namespace Mini_Market_Management_System
             // 
             this.comboBox_role.Cursor = System.Windows.Forms.Cursors.Default;
             this.comboBox_role.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_role.ForeColor = System.Drawing.Color.Goldenrod;
+            this.comboBox_role.ForeColor = System.Drawing.Color.Gray;
             this.comboBox_role.FormattingEnabled = true;
             this.comboBox_role.Items.AddRange(new object[] {
             "ADMIN",

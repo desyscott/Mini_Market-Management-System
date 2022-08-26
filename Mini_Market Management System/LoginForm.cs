@@ -27,7 +27,7 @@ namespace Mini_Market_Management_System
 
         private void label_exit_MouseLeave(object sender, EventArgs e)
         {
-            label_exit.ForeColor = Color.Goldenrod;
+            label_exit.ForeColor = Color.Gray;
         }
 
         private void label_clear_MouseEnter(object sender, EventArgs e)
