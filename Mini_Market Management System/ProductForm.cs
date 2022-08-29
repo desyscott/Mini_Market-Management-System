@@ -228,5 +228,15 @@ namespace Mini_Market_Management_System
             selling.Show();
             this.Hide();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TextBox_id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

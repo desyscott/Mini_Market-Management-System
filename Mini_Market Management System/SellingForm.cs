@@ -32,6 +32,10 @@ namespace Mini_Market_Management_System
             comboBox_category.ValueMember = "CatName";
             
         }
+        private void getBarCode()
+        {
+            
+        }
 
         private void getTable()
         {
@@ -59,6 +63,7 @@ namespace Mini_Market_Management_System
             getTable();
             getCategory();
             getSellTable();
+            getBarCode();
         }
 
         private void DataGridView_product_Click(object sender, EventArgs e)
@@ -107,9 +112,19 @@ namespace Mini_Market_Management_System
 
         private void label_logout_Click(object sender, EventArgs e)
         {
-            LoginForm login = new LoginForm();
-            login.Show();
-            this.Hide();
+          
+          if(MessageBox.Show("Logout Application?", "Confrim", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                LoginForm login = new LoginForm();
+                login.Show();
+                this.Hide();
+
+            }
+          
+ 
+         
+         
+          
         }
 
         private void label_exit_Click(object sender, EventArgs e)
@@ -152,6 +167,38 @@ namespace Mini_Market_Management_System
             DataGridView_product.DataSource = table;
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_amount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_seller_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BarCode_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BarCodeScanner scanner = new BarCodeScanner();
+            scanner.Show();
+            this.Hide();
+        }
+
         private void button_addOrder_Click(object sender, EventArgs e)
         {
             if (TextBox_name.Text == "" || TextBox_qty.Text == "")
@@ -170,7 +217,7 @@ namespace Mini_Market_Management_System
                 addRow.Cells[4].Value = Total;
                 dataGridView_order.Rows.Add(addRow);
                 grandTotal += Total;
-                label_amount.Text = grandTotal + " Ks";
+                label_amount.Text = "GHS " + grandTotal;
             }
         }
     }

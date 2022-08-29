@@ -63,10 +63,12 @@ namespace Mini_Market_Management_System
                 {
                     if (comboBox_role.SelectedItem.ToString() == "ADMIN")
                     {
-                        if (TextBox_username.Text == "Admin" && TextBox_password.Text == "Admin123")
+                        if (TextBox_username.Text == "Mr Desmond" && TextBox_password.Text == "Admin123")
                         {
+                            MessageBox.Show("Welcome "+TextBox_username.Text , "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             ProductForm product = new ProductForm();
                             product.Show();
+ 
                             this.Hide();
                         }
                         else
@@ -81,6 +83,7 @@ namespace Mini_Market_Management_System
                         SqlDataAdapter adapter = new SqlDataAdapter(selectQuery, dBCon.GetCon());
                         DataTable table = new DataTable();
                         adapter.Fill(table);
+                        MessageBox.Show("Welcome " + TextBox_username.Text, "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         if (table.Rows.Count > 0)
                         {
                             sellerName = TextBox_username.Text;
@@ -124,6 +127,11 @@ namespace Mini_Market_Management_System
         }
 
         private void comboBox_role_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

@@ -83,16 +83,12 @@ namespace Mini_Market_Management_System
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(929, 608);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // dataGridView_product
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dataGridView_product.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView_product.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView_product.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView_product.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView_product.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView_product.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -101,6 +97,7 @@ namespace Mini_Market_Management_System
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView_product.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView_product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,15 +106,12 @@ namespace Mini_Market_Management_System
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView_product.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView_product.EnableHeadersVisualStyles = false;
             this.dataGridView_product.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView_product.Location = new System.Drawing.Point(345, 102);
             this.dataGridView_product.Name = "dataGridView_product";
             this.dataGridView_product.RowHeadersVisible = false;
-            this.dataGridView_product.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_product.Size = new System.Drawing.Size(571, 491);
             this.dataGridView_product.TabIndex = 16;
-            this.dataGridView_product.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dataGridView_product.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView_product.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dataGridView_product.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -235,20 +229,16 @@ namespace Mini_Market_Management_System
             this.TextBox_price.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBox_price.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TextBox_price.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox_price.DisabledState.Parent = this.TextBox_price;
             this.TextBox_price.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TextBox_price.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox_price.FocusedState.Parent = this.TextBox_price;
             this.TextBox_price.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_price.ForeColor = System.Drawing.Color.Black;
             this.TextBox_price.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox_price.HoverState.Parent = this.TextBox_price;
             this.TextBox_price.Location = new System.Drawing.Point(128, 190);
             this.TextBox_price.Name = "TextBox_price";
             this.TextBox_price.PasswordChar = '\0';
             this.TextBox_price.PlaceholderText = "";
             this.TextBox_price.SelectedText = "";
-            this.TextBox_price.ShadowDecoration.Parent = this.TextBox_price;
             this.TextBox_price.Size = new System.Drawing.Size(200, 36);
             this.TextBox_price.TabIndex = 9;
             // 
@@ -282,20 +272,16 @@ namespace Mini_Market_Management_System
             this.TextBox_qty.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBox_qty.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TextBox_qty.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox_qty.DisabledState.Parent = this.TextBox_qty;
             this.TextBox_qty.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TextBox_qty.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox_qty.FocusedState.Parent = this.TextBox_qty;
             this.TextBox_qty.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_qty.ForeColor = System.Drawing.Color.Black;
             this.TextBox_qty.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox_qty.HoverState.Parent = this.TextBox_qty;
             this.TextBox_qty.Location = new System.Drawing.Point(128, 234);
             this.TextBox_qty.Name = "TextBox_qty";
             this.TextBox_qty.PasswordChar = '\0';
             this.TextBox_qty.PlaceholderText = "";
             this.TextBox_qty.SelectedText = "";
-            this.TextBox_qty.ShadowDecoration.Parent = this.TextBox_qty;
             this.TextBox_qty.Size = new System.Drawing.Size(200, 36);
             this.TextBox_qty.TabIndex = 5;
             // 
@@ -318,20 +304,16 @@ namespace Mini_Market_Management_System
             this.TextBox_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBox_name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TextBox_name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox_name.DisabledState.Parent = this.TextBox_name;
             this.TextBox_name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TextBox_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox_name.FocusedState.Parent = this.TextBox_name;
             this.TextBox_name.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_name.ForeColor = System.Drawing.Color.Black;
             this.TextBox_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox_name.HoverState.Parent = this.TextBox_name;
             this.TextBox_name.Location = new System.Drawing.Point(128, 146);
             this.TextBox_name.Name = "TextBox_name";
             this.TextBox_name.PasswordChar = '\0';
             this.TextBox_name.PlaceholderText = "";
             this.TextBox_name.SelectedText = "";
-            this.TextBox_name.ShadowDecoration.Parent = this.TextBox_name;
             this.TextBox_name.Size = new System.Drawing.Size(200, 36);
             this.TextBox_name.TabIndex = 3;
             // 
@@ -354,22 +336,19 @@ namespace Mini_Market_Management_System
             this.TextBox_id.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBox_id.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TextBox_id.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox_id.DisabledState.Parent = this.TextBox_id;
             this.TextBox_id.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TextBox_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox_id.FocusedState.Parent = this.TextBox_id;
             this.TextBox_id.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_id.ForeColor = System.Drawing.Color.Black;
             this.TextBox_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox_id.HoverState.Parent = this.TextBox_id;
             this.TextBox_id.Location = new System.Drawing.Point(128, 102);
             this.TextBox_id.Name = "TextBox_id";
             this.TextBox_id.PasswordChar = '\0';
             this.TextBox_id.PlaceholderText = "";
             this.TextBox_id.SelectedText = "";
-            this.TextBox_id.ShadowDecoration.Parent = this.TextBox_id;
             this.TextBox_id.Size = new System.Drawing.Size(200, 36);
             this.TextBox_id.TabIndex = 1;
+            this.TextBox_id.TextChanged += new System.EventHandler(this.TextBox_id_TextChanged);
             // 
             // label1
             // 
@@ -386,7 +365,7 @@ namespace Mini_Market_Management_System
             // 
             this.label_exit.AutoSize = true;
             this.label_exit.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_exit.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label_exit.ForeColor = System.Drawing.Color.Goldenrod;
             this.label_exit.Location = new System.Drawing.Point(1074, -5);
             this.label_exit.Name = "label_exit";
             this.label_exit.Size = new System.Drawing.Size(30, 32);
@@ -442,7 +421,7 @@ namespace Mini_Market_Management_System
             // 
             this.label_logout.AutoSize = true;
             this.label_logout.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_logout.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label_logout.ForeColor = System.Drawing.Color.Goldenrod;
             this.label_logout.Location = new System.Drawing.Point(32, 603);
             this.label_logout.Name = "label_logout";
             this.label_logout.Size = new System.Drawing.Size(95, 32);

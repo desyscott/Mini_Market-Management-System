@@ -30,6 +30,7 @@ namespace Mini_Market_Management_System
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,6 +45,8 @@ namespace Mini_Market_Management_System
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox_role = new System.Windows.Forms.ComboBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CircleButton1
@@ -112,6 +115,7 @@ namespace Mini_Market_Management_System
             this.TextBox_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_username.HoverState.Parent = this.TextBox_username;
             this.TextBox_username.Location = new System.Drawing.Point(438, 136);
+            this.TextBox_username.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TextBox_username.Name = "TextBox_username";
             this.TextBox_username.PasswordChar = '\0';
             this.TextBox_username.PlaceholderText = "";
@@ -183,7 +187,7 @@ namespace Mini_Market_Management_System
             this.label_exit.AutoSize = true;
             this.label_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label_exit.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_exit.ForeColor = System.Drawing.Color.Gray;
+            this.label_exit.ForeColor = System.Drawing.Color.Goldenrod;
             this.label_exit.Location = new System.Drawing.Point(619, 0);
             this.label_exit.Name = "label_exit";
             this.label_exit.Size = new System.Drawing.Size(30, 32);
@@ -196,10 +200,10 @@ namespace Mini_Market_Management_System
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.BackColor = System.Drawing.Color.SlateGray;
             this.label5.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(75, 108);
+            this.label5.Location = new System.Drawing.Point(73, 76);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 30);
             this.label5.TabIndex = 7;
@@ -220,14 +224,14 @@ namespace Mini_Market_Management_System
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.BackColor = System.Drawing.Color.SlateGray;
             this.label7.Font = new System.Drawing.Font("Sitka Display", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(49, 158);
+            this.label7.Location = new System.Drawing.Point(16, 262);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(162, 42);
+            this.label7.Size = new System.Drawing.Size(209, 42);
             this.label7.TabIndex = 8;
-            this.label7.Text = "MiniMarket";
+            this.label7.Text = "Shoprite Ghana";
             // 
             // comboBox_role
             // 
@@ -245,11 +249,25 @@ namespace Mini_Market_Management_System
             this.comboBox_role.Text = "Select Role";
             this.comboBox_role.SelectedIndexChanged += new System.EventHandler(this.comboBox_role_SelectedIndexChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SlateGray;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(21, 119);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(204, 131);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(650, 400);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBox_role);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -263,11 +281,13 @@ namespace Mini_Market_Management_System
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2CircleButton1);
+            this.ForeColor = System.Drawing.Color.Goldenrod;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.LoginForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,6 +309,7 @@ namespace Mini_Market_Management_System
         private System.Windows.Forms.ComboBox comboBox_role;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2Button Button_login;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

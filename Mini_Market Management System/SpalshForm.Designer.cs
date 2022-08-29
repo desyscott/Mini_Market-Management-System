@@ -44,7 +44,7 @@ namespace Mini_Market_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Sitka Display", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(107, 33);
+            this.label1.Location = new System.Drawing.Point(103, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(467, 42);
             this.label1.TabIndex = 1;
@@ -56,22 +56,27 @@ namespace Mini_Market_Management_System
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe Print", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(19, 49);
+            this.label2.Location = new System.Drawing.Point(3, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 62);
+            this.label2.Size = new System.Drawing.Size(176, 62);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Scottex";
+            this.label2.Text = "Shoprite";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // myProgressBar
             // 
             this.myProgressBar.BackColor = System.Drawing.Color.Transparent;
             this.myProgressBar.Controls.Add(this.label2);
-            this.myProgressBar.Location = new System.Drawing.Point(237, 111);
+            this.myProgressBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.myProgressBar.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.myProgressBar.ForeColor = System.Drawing.Color.White;
+            this.myProgressBar.Location = new System.Drawing.Point(235, 114);
+            this.myProgressBar.Minimum = 0;
             this.myProgressBar.Name = "myProgressBar";
+            this.myProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.myProgressBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.myProgressBar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.myProgressBar.ShadowDecoration.Parent = this.myProgressBar;
-            this.myProgressBar.Size = new System.Drawing.Size(190, 173);
+            this.myProgressBar.Size = new System.Drawing.Size(173, 173);
             this.myProgressBar.TabIndex = 3;
             this.myProgressBar.UseTransparentBackground = true;
             this.myProgressBar.ValueChanged += new System.EventHandler(this.myProgressBar_ValueChanged);
@@ -82,16 +87,12 @@ namespace Mini_Market_Management_System
             // 
             // guna2CircleButton1
             // 
-            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.FillColor = System.Drawing.Color.White;
             this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.Location = new System.Drawing.Point(0, 322);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.Size = new System.Drawing.Size(651, 149);
             this.guna2CircleButton1.TabIndex = 4;
             this.guna2CircleButton1.Text = "guna2CircleButton1";

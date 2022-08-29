@@ -47,7 +47,7 @@ namespace Mini_Market_Management_System
                 SqlCommand command = new SqlCommand(insertQuery, dBCon.GetCon());
                 dBCon.OpenCon();
                 command.ExecuteNonQuery();
-                MessageBox.Show("Product Added Successfully", "Add Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Seller Added Successfully", "Add Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dBCon.CloseCon();
                 getTable();
                 clear();
@@ -179,6 +179,11 @@ namespace Mini_Market_Management_System
             SellingForm selling = new SellingForm();
             selling.Show();
             this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
